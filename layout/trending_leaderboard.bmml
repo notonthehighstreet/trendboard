@@ -1,0 +1,383 @@
+<mockup version="1.0" skin="sketch" measuredW="1672" measuredH="1167" mockupW="1618" mockupH="1082">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="54" y="85" w="1618" h="1082" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//ledareboard</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::LineChart" x="279" y="498" w="484" h="105" measuredW="187" measuredH="175" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="279" y="367" w="88" h="86" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="54" y="158" w="1618" h="68" measuredW="100" measuredH="70" zOrder="5" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>3355443</color>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::RoundButton" x="247" y="347" w="43" h="43" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>1</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Canvas" x="257" y="352" w="518" h="266" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="299" y="462" w="132" h="21" measuredW="58" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>TRENDS</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::HRule" x="279" y="482" w="484" h="-1" measuredW="100" measuredH="5" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Paragraph" x="397" y="373" w="263" h="106" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::DateChooser" x="596" y="180" w="144" h="-1" measuredW="61" measuredH="25" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>to</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::RoundButton" x="660" y="429" w="103" h="40" measuredW="32" measuredH="32" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>+10%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::SearchBox" x="1347" y="175" w="299" h="-1" measuredW="141" measuredH="25" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>search%20for%20a%20product</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Icon" x="73" y="168" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>ChartLineIcon%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="73" y="221" w="1594" h="927" measuredW="200" measuredH="328" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>all%0Ahome%20%26%20garden%0Afor%20her%0Afor%20him%0Ababy%20%26%20child%0Agifts%0Afashion%0Aweddings%0Afather%27s%20day</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::ButtonBar" x="254" y="178" w="207" h="32" measuredW="186" measuredH="32" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>now%2C%20week%2C%20year</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::SubTitle" x="660" y="367" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Canvas" x="257" y="638" w="518" h="130" measuredW="100" measuredH="70" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Image" x="279" y="653" w="88" h="86" measuredW="77" measuredH="79" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="397" y="659" w="263" h="106" measuredW="200" measuredH="80" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::RoundButton" x="660" y="715" w="103" h="40" measuredW="32" measuredH="32" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>9.8%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::SubTitle" x="660" y="659" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::Icon" x="279" y="464" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>DownFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::RoundButton" x="247" y="624" w="43" h="43" measuredW="32" measuredH="32" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Canvas" x="861" y="352" w="518" h="266" measuredW="100" measuredH="70" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::LineChart" x="883" y="498" w="484" h="105" measuredW="187" measuredH="175" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Image" x="883" y="367" w="88" h="86" measuredW="77" measuredH="79" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::RoundButton" x="851" y="347" w="43" h="43" measuredW="32" measuredH="32" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>1</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Label" x="903" y="462" w="132" h="21" measuredW="58" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>TRENDS</text>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::HRule" x="883" y="482" w="484" h="-1" measuredW="100" measuredH="5" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="111" controlTypeID="com.balsamiq.mockups::Paragraph" x="1001" y="373" w="263" h="106" measuredW="200" measuredH="80" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::RoundButton" x="1264" y="429" w="103" h="40" measuredW="32" measuredH="32" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>+10%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::SubTitle" x="1264" y="367" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::Canvas" x="861" y="638" w="518" h="130" measuredW="100" measuredH="70" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::Image" x="883" y="653" w="88" h="86" measuredW="77" measuredH="79" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::Paragraph" x="1001" y="659" w="263" h="106" measuredW="200" measuredH="80" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::RoundButton" x="1264" y="715" w="103" h="40" measuredW="32" measuredH="32" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>+9%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::SubTitle" x="1264" y="659" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::Icon" x="883" y="464" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>DownFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::RoundButton" x="851" y="624" w="43" h="43" measuredW="32" measuredH="32" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="135" controlTypeID="com.balsamiq.mockups::Canvas" x="257" y="794" w="518" h="130" measuredW="100" measuredH="70" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="136" controlTypeID="com.balsamiq.mockups::Image" x="279" y="809" w="88" h="86" measuredW="77" measuredH="79" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="137" controlTypeID="com.balsamiq.mockups::Paragraph" x="397" y="815" w="263" h="106" measuredW="200" measuredH="80" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="138" controlTypeID="com.balsamiq.mockups::RoundButton" x="660" y="871" w="103" h="40" measuredW="32" measuredH="32" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>9.8%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="139" controlTypeID="com.balsamiq.mockups::SubTitle" x="660" y="815" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="140" controlTypeID="com.balsamiq.mockups::RoundButton" x="247" y="780" w="43" h="43" measuredW="32" measuredH="32" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="141" controlTypeID="com.balsamiq.mockups::Canvas" x="861" y="794" w="518" h="130" measuredW="100" measuredH="70" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="142" controlTypeID="com.balsamiq.mockups::Image" x="883" y="809" w="88" h="86" measuredW="77" measuredH="79" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="143" controlTypeID="com.balsamiq.mockups::Paragraph" x="1001" y="815" w="263" h="106" measuredW="200" measuredH="80" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="144" controlTypeID="com.balsamiq.mockups::RoundButton" x="1264" y="871" w="103" h="40" measuredW="32" measuredH="32" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>+9%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="145" controlTypeID="com.balsamiq.mockups::SubTitle" x="1264" y="815" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="146" controlTypeID="com.balsamiq.mockups::RoundButton" x="851" y="780" w="43" h="43" measuredW="32" measuredH="32" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="147" controlTypeID="com.balsamiq.mockups::Paragraph" x="125" y="172" w="83" h="48" measuredW="200" measuredH="80" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>18</size>
+        <text>LEADERBOARD</text>
+      </controlProperties>
+    </control>
+    <control controlID="148" controlTypeID="com.balsamiq.mockups::TextInput" x="493" y="179" w="92" h="-1" measuredW="41" measuredH="27" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <borderColor>16777215</borderColor>
+        <text>from</text>
+      </controlProperties>
+    </control>
+    <control controlID="149" controlTypeID="com.balsamiq.mockups::Title" x="449" y="274" w="-1" h="-1" measuredW="136" measuredH="33" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>PRODUCTS</text>
+      </controlProperties>
+    </control>
+    <control controlID="150" controlTypeID="com.balsamiq.mockups::Title" x="1055" y="274" w="-1" h="-1" measuredW="131" measuredH="33" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>PARTNERS</text>
+      </controlProperties>
+    </control>
+    <control controlID="151" controlTypeID="com.balsamiq.mockups::Canvas" x="257" y="967" w="518" h="130" measuredW="100" measuredH="70" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="152" controlTypeID="com.balsamiq.mockups::Image" x="279" y="982" w="88" h="86" measuredW="77" measuredH="79" zOrder="56" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="153" controlTypeID="com.balsamiq.mockups::Paragraph" x="397" y="988" w="263" h="106" measuredW="200" measuredH="80" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::RoundButton" x="660" y="1044" w="103" h="40" measuredW="32" measuredH="32" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>9.8%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="155" controlTypeID="com.balsamiq.mockups::SubTitle" x="660" y="988" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::RoundButton" x="247" y="953" w="43" h="43" measuredW="32" measuredH="32" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>4</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::Canvas" x="861" y="967" w="518" h="130" measuredW="100" measuredH="70" zOrder="61" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10066329</borderColor>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="158" controlTypeID="com.balsamiq.mockups::Image" x="883" y="982" w="88" h="86" measuredW="77" measuredH="79" zOrder="62" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="159" controlTypeID="com.balsamiq.mockups::Paragraph" x="1001" y="988" w="263" h="106" measuredW="200" measuredH="80" zOrder="63" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>12%20Kashmiri%20Spice%20Tins</text>
+      </controlProperties>
+    </control>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::RoundButton" x="1264" y="1044" w="103" h="40" measuredW="32" measuredH="32" zOrder="64" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpFillTriangleIcon%7Csmall</icon>
+        <shape>roundRect</shape>
+        <text>+9%25</text>
+      </controlProperties>
+    </control>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::SubTitle" x="1264" y="988" w="-1" h="-1" measuredW="101" measuredH="33" zOrder="65" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%A3864.75</text>
+      </controlProperties>
+    </control>
+    <control controlID="162" controlTypeID="com.balsamiq.mockups::RoundButton" x="851" y="953" w="43" h="43" measuredW="32" measuredH="32" zOrder="66" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>4</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
