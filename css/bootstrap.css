@@ -136,7 +136,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #333333;
+  color: #434343;
   background: url('../img/board_bg.gif') 0 0;
 }
 a {
@@ -331,6 +331,7 @@ a:hover {
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 15px;
   *zoom: 1;
 }
 .container-fluid:before,
@@ -376,11 +377,11 @@ h6 small {
   color: #999999;
 }
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 20px;
 }
 h1 small {
-  font-size: 18px;
+  font-size: 15px;
 }
 h2 {
   font-size: 24px;
@@ -3322,7 +3323,7 @@ input[type="submit"].btn.btn-mini {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 10px;
   line-height: 1;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
@@ -4308,7 +4309,6 @@ button.close {
   }
   .container-fluid {
     padding: 0;
-    padding-top: 20px;
   }
   .dl-horizontal dt {
     float: none;
@@ -4922,4 +4922,23 @@ button.close {
     height: auto !important;
     overflow: visible !important;
   }
+}
+
+.product-module {
+  background-color: #ffffff;
+  border: 1px solid #a7a4a0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
+  margin-bottom: 20px;
+}
+.product-module h1 {
+  padding: 10px 0;
+}
+.product-module h4, .product-module h5 {
+  text-align: right;
+  padding: 10px;
 }
