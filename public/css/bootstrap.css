@@ -4942,3 +4942,7 @@ button.close {
   text-align: right;
   padding: 10px;
 }
+
+#page_wrapper {
+  padding-top: 90px;
+}
