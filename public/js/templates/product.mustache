@@ -2,24 +2,25 @@
   <div class="row-fluid">
     <div class="span3">
       <span class="badge">{{index}}</span>
-      <a href="{{link}}" class="thumbnail">
+      <a href="{{url}}" class="thumbnail">
         <img src="{{image}}" alt="IMAGE ALT GOES HERE">
       </a>
     </div>
     <div class="span9">
       <div class="row-fluid">
         <div class="span6">
-          <h1 class="small">{{title}}</h1>
+          <h1 class="small"><a href="{{url}}">{{title}}</a></h1>
         </div>
         <div class="span6">
           <h4 class="small">£ {{sales}}</h4>
           <h5 class="small">u. {{units}}</h5>
+          <h6 class="small">id: {{id}}</h6>
         </div>
       </div>
     </div><!--/span9-->
   </div>
   <div class="row-fluid">
-    <div id="trend-chart" class="collapse">{{!chart}}</div>
+    <div class="trend-chart hide">hai</div>
   </div>
   <div class="row-fluid">
     <a class="btn show-chart span12" href="#">Show trend <i class="icon-arrow-down"></i></a>

@@ -140,12 +140,12 @@ body {
   background: url('../img/board_bg.gif') 0 0;
 }
 a {
-  color: #0088cc;
+  color: #129DB2;
   text-decoration: none;
 }
 a:hover {
-  color: #005580;
-  text-decoration: underline;
+  color: #73BDD8;
+  text-decoration: none;
 }
 .row {
   margin-left: -20px;
