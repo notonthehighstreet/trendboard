@@ -25,27 +25,6 @@
 
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
-
-      $(document).ready(function(){
-        $.get("/product/81783", function(data){
-          google.setOnLoadCallback(showGraph(data));
-        });
-      });
-
-      function showGraph(data) {
-        d = JSON.parse(data)[81783];
-        var table = new google.visualization.DataTable();
-        table.addColumn('string','Date');
-        table.addColumn('number','Sales');
-        table.addColumn('number','Units');
-        table.addRows(d);
-        var options = {
-          hAxis: {title: 'Date',  titleTextStyle: {color: 'red'}}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(table, options);
-      }
     </script>
   </head>
 
