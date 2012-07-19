@@ -2991,7 +2991,7 @@ input[type="submit"].btn.btn-mini {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 10px 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -3344,6 +3344,7 @@ a.thumbnail:hover {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -4924,7 +4925,7 @@ button.close {
   }
 }
 
-.product-module {
+.module {
   background-color: #ffffff;
   border: 1px solid #a7a4a0;
   -webkit-border-radius: 4px;
@@ -4936,15 +4937,15 @@ button.close {
   margin-bottom: 20px;
   overflow: hidden;
 }
-.product-module h1 {
+.module h1 {
   padding: 10px 0;
 }
-.product-module h4, .product-module h5 {
+.module h4, .module h5 {
   text-align: right;
   padding: 10px;
 }
 
 #page_wrapper {
-  padding-top: 90px;
+  padding-top: 110px;
 }
 

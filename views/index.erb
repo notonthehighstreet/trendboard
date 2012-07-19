@@ -32,19 +32,22 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="brand" href="#"><img src="/public/img/trendboard_logo.svg"></a>
+          <a class="brand" href="#"><img src="/img/trendboard_logo.svg" width="70"></a>
+          <!--
           <div class="pull-right">
             <form class="navbar-search">
               <input type="text" class="input-medium search-query" placeholder="Search">
             </form>
           </div>
+          -->
           <div class="nav">
             <div class="btn-group pull-left" data-toggle="buttons-radio">
-              <button class="btn">last week</button>
-              <button class="btn">last month</button>
-              <button class="btn">last year</button>
+              <button id="today" class="btn timeframe-button">last day</button>
+              <button id="week" class="btn timeframe-button">last week</button>
+              <button id="month" class="btn timeframe-button">last month</button>
             </div>
           </div><!--/.nav-collapse -->
+          <!--
           <div class="btn-group pull-left">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-user"></i> all the category
@@ -66,6 +69,7 @@
               <li><a href="#">weddings</a></li>
             </ul>
           </div>
+          -->
         </div>
       </div>
     </div>
