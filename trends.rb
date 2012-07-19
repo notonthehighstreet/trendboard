@@ -12,3 +12,9 @@ get '/products' do
   response = HTTParty.get("http://www.dev.notonthehighstreet.com/product_trends.json")
   response.body.to_json
 end
+
+get '/product/:id' do
+  content_type :json
+  response = HTTParty.get("http://www.dev.notonthehighstreet.com/product_trends/#{params[:id]}.json")
+  response.body.to_json
+end

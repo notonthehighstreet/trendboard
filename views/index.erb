@@ -25,27 +25,26 @@
 
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
-      // google.setOnLoadCallback(drawChart);
-      // function drawChart() {
-      //   var data = google.visualization.arrayToDataTable([
-      //     ['Date', 'Sales', 'units'],
-      //     ['2004',  1000,      400],
-      //     ['2005',  1170,      460],
-      //     ['2006',  660,       1120],
-      //     ['2007',  1030,      540]
-      //   ]);
 
-      //   var options = {
-      //     title: 'Company Performance',
-      //     hAxis: {title: 'Year',  titleTextStyle: {color: 'red'}}
-      //   };
+      $(document).ready(function(){
+        $.get("/product/81783", function(data){
+          google.setOnLoadCallback(showGraph(data));
+        });
+      });
 
-      //   var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-      //   chart.draw(data, options);
-      // }
+      function showGraph(data) {
+        d = JSON.parse(data)[81783];
+        var table = new google.visualization.DataTable();
+        table.addColumn('string','Date');
+        table.addColumn('number','Sales');
+        table.addColumn('number','Units');
+        table.addRows(d);
+        var options = {
+          hAxis: {title: 'Date',  titleTextStyle: {color: 'red'}}
+        };
 
-      function showProducts(data) {
-
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(table, options);
       }
     </script>
 
@@ -104,6 +103,8 @@
         </div>
       </div>
     </div>
+
+    <div id="chart_div" style="width: 100%; height: 300px;">
 
   </body>
 </html>
