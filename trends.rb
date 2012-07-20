@@ -7,7 +7,7 @@ get '/' do
   erb :index
 end
 
-get '/products' do
+get '/product' do
   content_type :json
   response = HTTParty.get("http://www.dev.notonthehighstreet.com/product_trends.json?timeframe=#{params[:timeframe]}")
   response.body.to_json

@@ -7,6 +7,9 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ @font-face {font-family: 'Museo-300';src: url('webfonts/238160_0_0.eot');src: url('webfonts/238160_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/238160_0_0.woff') format('woff'),url('webfonts/238160_0_0.ttf') format('truetype');}
+ @font-face {font-family: 'Museo-500';src: url('webfonts/238160_1_0.eot');src: url('webfonts/238160_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/238160_1_0.woff') format('woff'),url('webfonts/238160_1_0.ttf') format('truetype');}
+
 .clearfix {
   *zoom: 1;
 }
@@ -400,19 +403,19 @@ h3 small {
 h4,
 h5,
 h6 {
-  line-height: 18px;
+  line-height: 20px;
 }
 h4 {
-  font-size: 14px;
+  font-size: 24px;
 }
 h4 small {
-  font-size: 12px;
+  font-size: 16px;
 }
 h5 {
-  font-size: 12px;
+  font-size: 20px;
 }
 h6 {
-  font-size: 11px;
+  font-size: 14px;
   color: #999999;
   text-transform: uppercase;
 }
@@ -4940,12 +4943,32 @@ button.close {
 .module h1 {
   padding: 10px 0;
 }
-.module h4, .module h5 {
+.module h4, .module h5,.module h6 {
   text-align: right;
   padding: 10px;
+  font-family: Museo-300;
+  color: #555;
+}
+.module h4 span, .module h5 span, .module h6 span {
+  font-size: 70%;
+  color: #555;
+}
+
+.module h6 {
+  margin-top: 16px;
 }
 
 #page_wrapper {
   padding-top: 110px;
 }
 
+.ajax-loader {
+  background: url("/img/ajax-loader.gif") no-repeat 50% 50% #FFF;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}

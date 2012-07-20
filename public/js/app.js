@@ -1,74 +1,71 @@
 $(document).ready(function() {
-
-    // Loading the product feed
-    var product_template;
-    var partner_template;
+    var templates = [];
+    var partner_ready = false;
+    var products_ready = false;
 
     $.get('/js/templates/product.mustache', function(response) {
-        product_template = response;
-        create_products();
+        templates.product = response;
+        create_module("product");
     }, "html");
 
     $.get('/js/templates/partner.mustache', function(response) {
-        partner_template = response;
-        create_partners();
+        templates.partner = response;
+        create_module("partner");
     }, "html");
 
-
-    function create_products(timeframe) {
+    function create_module(module_type, timeframe) {
         timeframe = typeof timeframe !== 'undefined' ? timeframe : "today";
 
-        $("#product_container").empty();
+        $("#" + module_type + "_container").empty();
 
-        $.getJSON('/products?timeframe=' + timeframe, function(products) {
-            $.each(JSON.parse(products), function(index, product) {
-                product.index = index + 1;
-                var $html = $(Mustache.to_html(product_template, product));
+        $.getJSON('/' + module_type + '?timeframe=' + timeframe, function(modules_ajax) {
+            var module_array = [];
 
-                $html.data('moduleId', product.id);
-                $html.data('moduleType', "product");
-                $html.css("opacity", 0);
+            $.each(JSON.parse(modules_ajax), function(index, module_ajax) {
+                module_ajax.index = index + 1;
+                var $module = $(Mustache.to_html(templates[module_type], module_ajax));
+                module_array.push($module);
 
-                $("#product_container").append($html);
+                $module.data('moduleId', partner.id);
+                $module.data('moduleType', module_type);
+                $module.css("opacity", 0);
 
-                var delay_offset = 0;
-                $(".module").each(function() {
-                    $(this).delay(delay_offset).animate({
-                        opacity: 1
-                    });
+                $("#" + module_type + "_container").append($html);
 
-                    delay_offset += 100;
-                });
+                display_modules(module_array);
+
+                if (module_type == "partner") {
+                    partner_ready = true;
+                } else {
+                    product_ready = true;
+                }
+
+                // Hide ajax loader
+                ajax_loader_display(false);
             });
         });
     }
 
-    function create_partners(timeframe) {
-        timeframe = typeof timeframe !== 'undefined' ? timeframe : "today";
-
-        $("#partner_container").empty();
-
-        $.getJSON('/partner?timeframe=' + timeframe, function(partners) {
-            $.each(JSON.parse(partners), function(index, partner) {
-                partner.index = index + 1;
-                var $html = $(Mustache.to_html(partner_template, partner));
-
-                $html.data('moduleId', partner.id);
-                $html.data('moduleType', "partner");
-                $html.css("opacity", 0);
-
-                $("#partner_container").append($html);
-
-                var delay_offset = 0;
-                $(".module").each(function() {
-                    $(this).delay(delay_offset).animate({
-                        opacity: 1
-                    });
-
-                    delay_offset += 100;
-                });
+    function display_modules(module_array) {
+        var delay_offset = 0;
+        $.each(module_array, function(i,item) {
+            item.delay(delay_offset).animate({
+                opacity: 1
             });
+
+            delay_offset += 100;
         });
+    }
+
+    function ajax_loader_display(display) {
+        if (display) {
+                var ajax_loader = $("<div>").addClass("well ajax-loader");
+                ajax_loader.appendTo("body");
+        } else {
+            if (partner_ready && products_ready) {
+                $(".ajax-loader").remove();
+            }
+        }
     }
 
     function showGraph(d, module) {
