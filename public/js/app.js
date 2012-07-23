@@ -4,9 +4,6 @@ $(document).ready(function() {
     var products_ready = false;
     var timeframe = "today";
 
-    // tmp
-    $(".span3").hide();
-
     $.get('/js/templates/product.mustache', function(response) {
         templates.product = response;
         create_module("product");
@@ -41,6 +38,9 @@ $(document).ready(function() {
                 } else {
                     product_ready = true;
                 }
+
+                // tmp
+                $(".span3").hide();
 
                 // Hide ajax loader
                 ajax_loader_display(false);

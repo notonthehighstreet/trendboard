@@ -283,7 +283,8 @@ a:hover {
   *width: 82.92553190663828%;
 }
 .row-fluid .span9 {
-  width: 74.468085099%;
+  /*width: 74.468085099%;*/
+  width: 98%;
   *width: 74.4148936096383%;
 }
 .row-fluid .span8 {
@@ -4954,7 +4955,7 @@ button.close {
 }
 
 .module h6 {
-  margin-top: 16px;
+  margin-top: 0px;
 }
 
 #page_wrapper {
