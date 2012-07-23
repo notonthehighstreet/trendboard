@@ -2,6 +2,7 @@ $(document).ready(function() {
     var templates = [];
     var partner_ready = false;
     var products_ready = false;
+    var timeframe = "today";
 
     $.get('/js/templates/product.mustache', function(response) {
         templates.product = response;
@@ -13,9 +14,7 @@ $(document).ready(function() {
         create_module("partner");
     }, "html");
 
-    function create_module(module_type, timeframe) {
-        timeframe = typeof timeframe !== 'undefined' ? timeframe : "today";
-
+    function create_module(module_type) {
         $("#" + module_type + "_container").empty();
 
         $.getJSON('/' + module_type + '?timeframe=' + timeframe, function(modules_ajax) {
@@ -26,11 +25,11 @@ $(document).ready(function() {
                 var $module = $(Mustache.to_html(templates[module_type], module_ajax));
                 module_array.push($module);
 
-                $module.data('moduleId', partner.id);
+                $module.data('moduleId', module_ajax.id);
                 $module.data('moduleType', module_type);
                 $module.css("opacity", 0);
 
-                $("#" + module_type + "_container").append($html);
+                $("#" + module_type + "_container").append($module);
 
                 display_modules(module_array);
 
@@ -94,8 +93,9 @@ $(document).ready(function() {
 
             $(this).find("i").toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 
-            $.getJSON('/' + module.data("moduleType") + '/' + module.data("moduleId"), function(product_details) {
-                data = JSON.parse(product_details)[module.data("moduleId")];
+            $.getJSON('/' + module.data("moduleType") + '/' + module.data("moduleId") + '?timeframe=' + timeframe, function(product_details) {
+                data = JSON.parse(product_details);
+
                 showGraph(data, module);
             });
         });
@@ -104,8 +104,9 @@ $(document).ready(function() {
 
     function time_frame_buttons() {
         $(".timeframe-button").click(function() {
-            create_products($(this).attr("id"));
-            create_partners($(this).attr("id"));
+            timeframe = $(this).attr("id")
+            create_module("product");
+            create_module("partner");
         });
     }
     time_frame_buttons();
