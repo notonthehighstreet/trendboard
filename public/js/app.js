@@ -4,6 +4,9 @@ $(document).ready(function() {
     var products_ready = false;
     var timeframe = "today";
 
+    // tmp
+    $(".span3").hide();
+
     $.get('/js/templates/product.mustache', function(response) {
         templates.product = response;
         create_module("product");
