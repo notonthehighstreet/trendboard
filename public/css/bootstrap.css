@@ -613,19 +613,16 @@ pre code {
   border-radius: 3px;
 }
 .badge {
-  padding: 1px 9px 2px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
+  padding: 7px 7px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   z-index: 4;
-margin-top: -6px;
-margin-left: -10px;
+margin-top: -12px;
+margin-left: -12px;
 position: absolute;
-font-size: 25px;
-height: 25px;
-width: 15px;
+font-size: 22px;
 text-align: center;
-line-height: 23px;
 }
 a.label:hover,
 a.badge:hover {
@@ -4575,6 +4572,10 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
   .row {
     margin-left: -30px;
     *zoom: 1;
@@ -4798,6 +4799,9 @@ button.close {
   body {
     padding-top: 0;
   }
+  #page_wrapper {
+    padding-top: 0px !important;
+  }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
@@ -4941,11 +4945,11 @@ button.close {
   overflow: hidden;
 }
 .module h1 {
-  padding: 10px 0;
+  padding: 20px;
 }
 .module h4, .module h5,.module h6 {
   text-align: right;
-  padding: 10px;
+  padding: 20px 20px 0;
   font-family: Museo-300;
   color: #555;
 }
@@ -4956,6 +4960,7 @@ button.close {
 
 .module h6 {
   margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 #page_wrapper {
@@ -4964,11 +4969,16 @@ button.close {
 
 .ajax-loader {
   background: url("/img/ajax-loader.gif") no-repeat 50% 50% #FFF;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   width: 50px;
   height: 50px;
   top: 50%;
   left: 50%;
   margin-left: -50px;
   margin-top: -50px;
+}
+
+.show-chart {
+  margin-bottom: -1px;
 }
