@@ -39,9 +39,6 @@ $(document).ready(function() {
                     product_ready = true;
                 }
 
-                // tmp
-                $(".span3").hide();
-
                 // Hide ajax loader
                 ajax_loader_display(false);
             });

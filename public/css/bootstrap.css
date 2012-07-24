@@ -283,8 +283,7 @@ a:hover {
   *width: 82.92553190663828%;
 }
 .row-fluid .span9 {
-  /*width: 74.468085099%;*/
-  width: 98%;
+  width: 74.468085099%;
   *width: 74.4148936096383%;
 }
 .row-fluid .span8 {
@@ -624,6 +623,7 @@ margin-left: -10px;
 position: absolute;
 font-size: 25px;
 height: 25px;
+width: 15px;
 text-align: center;
 line-height: 23px;
 }
@@ -4955,7 +4955,7 @@ button.close {
 }
 
 .module h6 {
-  margin-top: 0px;
+  margin-top: 16px;
 }
 
 #page_wrapper {
