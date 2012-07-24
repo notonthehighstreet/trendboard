@@ -92,7 +92,7 @@ $(document).ready(function() {
     }
 
     $(window).resize(function() {
-        $(".module").each(function(index) {
+        $(".module.chart-visible").each(function(index) {
             drawGraph($(this));
         });
     });
@@ -111,6 +111,7 @@ $(document).ready(function() {
                 ajax_loader_display(false);
                 drawGraph(module);
                 trend_chart.slideToggle();
+                module.toggleClass("chart-visible");
             });
 
             return false;
