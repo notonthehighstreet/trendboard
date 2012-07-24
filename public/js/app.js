@@ -4,6 +4,8 @@ $(document).ready(function() {
     var products_ready = false;
     var timeframe = "today";
 
+    ajax_loader_display(true);
+
     $.get('/js/templates/product.mustache', function(response) {
         templates.product = response;
         create_module("product");
@@ -30,18 +32,18 @@ $(document).ready(function() {
                 $module.css("opacity", 0);
 
                 $("#" + module_type + "_container").append($module);
-
-                display_modules(module_array);
-
-                if (module_type == "partner") {
-                    partner_ready = true;
-                } else {
-                    product_ready = true;
-                }
-
-                // Hide ajax loader
-                ajax_loader_display(false);
             });
+
+            if (module_type == "partner") {
+                partner_ready = true;
+            } else {
+                products_ready = true;
+            }
+
+            // Hide ajax loader
+            ajax_loader_display(false);
+
+            display_modules(module_array);
         });
     }
 
@@ -67,12 +69,17 @@ $(document).ready(function() {
         }
     }
 
-    function showGraph(d, module) {
+    function drawGraph(module) {
+        var d = module.data("chartData");
+        if (!d) return false;
+
         var table = new google.visualization.DataTable();
+
         table.addColumn('string','Date');
         table.addColumn('number','Sales');
         table.addColumn('number','Units');
         table.addRows(d);
+
         var options = {
             hAxis: {title: 'Date',  titleTextStyle: {color: 'red'}},
             width: module.width(),
@@ -84,29 +91,54 @@ $(document).ready(function() {
         chart.draw(table, options);
     }
 
+    $(window).resize(function() {
+        $(".module").each(function(index) {
+            drawGraph($(this));
+        });
+    });
+
     // Toggle the container of the chart and do the ajax call
     function module_chart_toggle() {
         $("#page_wrapper").on("click", ".show-chart", function() {
-            var module = $(this).closest(".module");
+            var show_chart_button = $(this);
+            var module = show_chart_button.closest(".module");
             var trend_chart = module.find(".trend-chart");
-            trend_chart.slideToggle();
 
-            $(this).find("i").toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
+            show_chart_button.find("i").toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
 
-            $.getJSON('/' + module.data("moduleType") + '/' + module.data("moduleId") + '?timeframe=' + timeframe, function(product_details) {
-                data = JSON.parse(product_details);
-
-                showGraph(data, module);
+            ajax_loader_display(true);
+            get_chart_data(module, function() {
+                ajax_loader_display(false);
+                drawGraph(module);
+                trend_chart.slideToggle();
             });
+
+            return false;
         });
     }
     module_chart_toggle();
 
+    function get_chart_data(module, callback) {
+        if (!module.data("chartData")) {
+            $.getJSON('/' + module.data("moduleType") + '/' + module.data("moduleId") + '?timeframe=' + timeframe, function(product_details) {
+                module.data("chartData", JSON.parse(product_details));
+                callback();
+            });
+        } else {
+            callback();
+        }
+    }
+
     function time_frame_buttons() {
         $(".timeframe-button").click(function() {
+            partner_ready = false;
+            products_ready = false;
+
             timeframe = $(this).attr("id")
             create_module("product");
             create_module("partner");
+
+            ajax_loader_display(true);
         });
     }
     time_frame_buttons();
