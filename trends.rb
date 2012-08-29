@@ -5,6 +5,10 @@ require "json"
 
 TOKEN = 'c8lto6pj9y9hl28vl3wq1q7jps62is8uj9jnsj3g'
 
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['noths', 'nothstrend0192']
+end
+
 get '/' do
   erb :index
 end
